@@ -1,20 +1,18 @@
+# 20180113031506, AmaralC
+# This function convert a sequence of characteres in date format using the module datetime
 
+from datetime import datetime
 
+def sequence_to_date(yyyyMMddhhmmss)
 
-import datetime
-
-def dateseries(yyyymmddhhmmss)
-
-	timestamp = str(yyyymmddhhmmss)
-	yyyy = dbl(timestamp[0:4])
-	mm = dbl(timestamp[4:6])
-	dd = dbl(timestamp[6:8])
-	hh = dbl(timestamp[8:10])
-	mm = dbl(timestamp[10:12])
-	ss = dbl(timestamp[12:14])
+	timestamp = str(yyyyMMddhhmmss)
+	yyyy = int(timestamp[0:4])
+	MM = int(timestamp[4:6])
+	dd = int(timestamp[6:8])
+	hh = int(timestamp[8:10])
+	mm = int(timestamp[10:12])
+	ss = int(timestamp[12:14])
 
   # Use existing function from datetime module to convert strings in date	
-	dateseries = datetime.datetime(yyyy,mm,dd,hh,mm,ss)
-	
-	return dataseries
+	return datetime(yyyy,MM,dd,hh,mm,ss)
 	
